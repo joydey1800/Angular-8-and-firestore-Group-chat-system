@@ -1,0 +1,15 @@
+<div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+    <form #form="ngForm" (ngSubmit)=chatPage()>
+
+        <div class="input-group input-group-lg" style="width: 400px;">
+            <input name="name" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm"
+                placeholder="Enter Your name" [(ngModel)]="name" required>
+
+            <div class="input-group-append">
+                <button class="btn btn-outline-info" [disabled]="form.invalid" type="submit">Chat</button>
+            </div>
+        </div>
+
+    </form>
+
+</div>

@@ -1,0 +1,15 @@
+<form #form="ngForm" (submit)="sendMsg(form)">
+    <div class="input-group">
+
+        <input type="hidden" name="fullName" #fullName="ngModel" [(ngModel)]="saveData.formData.fullName">
+
+        <input class="form-control" placeholder="your message" name="messagess" #messagess="ngModel"
+            [(ngModel)]="saveData.formData.messagess">
+
+
+        <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="submit">Button</button>
+        </div>
+
+    </div>
+</form>
